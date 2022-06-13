@@ -1,6 +1,6 @@
 # Project link:
 
-(https://github.com/PNdunguMaina/My-personal-portfolio.git)
+(https://pndungumaina.github.io/)
 
 # Project Name
 
