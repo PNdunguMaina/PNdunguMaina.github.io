@@ -24,19 +24,10 @@
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
-  line-height: 16px;
+  line-height: 24px;
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-}
-
-.side-nav ul,
-.mail-bar {
-  display: none;
-}
-
-.menu-bar {
-  margin-right: 3.75em;
 }
 
 button {
@@ -445,9 +436,13 @@ h5 {
     width: 30%;
   }
 
-  .side-nav ul,
+  .side-nav ul:first-child,
   .mail-bar {
     display: flex;
+  }
+
+  .side-nav ul:nth-child(2) {
+    display: none;
   }
 
   .nav-items {
@@ -456,9 +451,9 @@ h5 {
     padding: 0;
     gap: 8px;
     position: absolute;
-    width: 25%;
+    width: 30%;
     height: 40px;
-    right: 10.5%;
+    right: 6.5%;
     top: 16px;
   }
 
@@ -513,13 +508,20 @@ h5 {
     text-decoration: none;
   }
 
+  .mail-icon {
+    margin-right: 3.5rem;
+  }
+
   .mail-bar {
     display: flex;
     height: 18px;
     position: absolute;
     top: 3px;
     width: 22px;
-    right: 10.5%;
+  }
+
+  .cancel-icon {
+    display: none;
   }
 
   .menu-bar {
