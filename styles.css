@@ -35,6 +35,70 @@ button {
   border-style: none;
 }
 
+.side-nav ul:first-child,
+.mail-bar {
+  display: none;
+}
+
+.nav-menu {
+  display: none;
+}
+
+.active.nav-menu {
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 536px;
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  background: #191765;
+  z-index: 10;
+}
+
+.nav-menu li {
+  width: 87%;
+  display: flex;
+  list-style: none;
+  margin-left: 6.5%;
+  margin-right: 6.5%;
+  line-height: 56px;
+  border: 1px #fff;
+}
+
+.nav-menu li:first-child {
+  margin-top: 48px;
+  margin-left: 83%;
+  margin-bottom: 34px;
+}
+
+.nav-menu li + li {
+  margin-bottom: 56px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #edecff;
+}
+
+.angle-bracket {
+  color: #7d73fc;
+  font-size: 16px;
+  height: 12px;
+}
+
+.menu-bar {
+  margin-right: 3.75rem;
+}
+
 .button-works {
   display: flex;
   flex-direction: row;
