@@ -60,7 +60,8 @@ button {
   width: 100%;
   min-height: 100vh;
   position: absolute;
-  background: url(Images/menu1.svg) no-repeat left bottom,
+  background: 
+    url(Images/menu1.svg) no-repeat left bottom,
     url(Images/menu2.svg) no-repeat bottom right rgba(25, 23, 101, 1);
   z-index: 10;
 }
@@ -322,6 +323,17 @@ h4 {
   margin-bottom: 40px;
 }
 
+.mail-area span {
+  color: #131212;
+  margin-top: 104px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  box-sizing: border-box;
+  padding: 16px;
+  border: 1px solid #131212;
+}
+
 .tags li span {
   position: absolute;
   width: 1px;
@@ -387,16 +399,26 @@ input:invalid {
   background-color: #fdd;
 }
 
-input:focus:invalid {
-  outline: none;
-}
-
 .user-name input {
   height: 48px;
   padding: 15px 16px 15px 16px;
   width: 83%;
   margin-left: 6.5%;
   background-color: #fff;
+}
+
+.mail-area input {
+  height: 48px;
+  padding: 15px 16px 15px 16px;
+  width: 83%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 6.5%;
+  background-color: #fff;
+}
+
+input:focus:invalid {
+  outline: none;
 }
 
 .user-name input::placeholder {
@@ -413,33 +435,12 @@ input:focus:invalid {
   flex-direction: column;
 }
 
-.mail-area input {
-  height: 48px;
-  padding: 15px 16px 15px 16px;
-  width: 83%;
-  margin-top: 24px;
-  margin-bottom: 24px;
-  margin-left: 6.5%;
-  background-color: #fff;
-}
-
 .mail-area input::placeholder {
   height: 18px;
   font-family: "Inter", sans-serif;
   font-weight: 400px;
   font-size: 15px;
   color: #191765;
-}
-
-.mail-area span {
-  color: #131212;
-  margin-top: 104px;
-  position: absolute;
-  background-color: #fff;
-  border-radius: 0 0 5px 5px;
-  box-sizing: border-box;
-  padding: 16px;
-  border: 1px solid #131212;
 }
 
 .message-area textarea {
