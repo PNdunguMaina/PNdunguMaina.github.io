@@ -11,29 +11,19 @@ document.querySelectorAll(".nav-link").forEach((n) =>
   })
 );
 
-const form = document.getElementsByTagName("form");
-const email = document.getElementById("mail");
-const emailError = document.querySelector("#mail + span.error");
-
-email.addEventListener("input", () => {
-  if (email.value.search(/[a-z]g/) !== -1) {
-    emailError.textContent = "success";
-    emailError.className = "error";
-  } else {
-    showError();
-  }
-});
+const form = document.getElementById("contact-form");
+const emailInput = document.getElementById("mail");
+const alert = document.querySelector(".error");
 
 form.addEventListener("submit", (event) => {
-  if (email.value.search(/[a-z]g/) !== -1) {
-    emailError.textContent = "success";
-  } else {
-    showError();
+  let alertError = "";
+  const email = emailInput.value.toLowerCase();
+  if (email !== emailInput.value) {
+    alertError =
+      "Your form cannot be submitted, please turn it to lowercase and resubmit";
+  }
+  if (alertError.length > 0) {
     event.preventDefault();
+    alert.innerHTML = alertError;
   }
 });
-
-function showError() {
-  emailError.textContent = "Entered value needs to be in lowercase";
-  emailError.className = "open";
-}

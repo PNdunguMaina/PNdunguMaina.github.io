@@ -1,6 +1,6 @@
-# Project link:
+# Project source link:
 
-(https://pndungumaina.github.io/)
+https://github.com/PNdunguMaina/Portfolio.git
 
 # Project Name
 
@@ -12,7 +12,13 @@ I have created my personal portfolio webpage to be visible on both the mobile an
 
 ## Built With
 
-- CSS & HTML languages
+- CSS language
+- HTML language
+- Javascript language
+
+## Live Demo
+
+(https://pndungumaina.github.io/)
 
 👤 **Author**
 

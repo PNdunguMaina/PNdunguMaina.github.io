@@ -323,17 +323,6 @@ h4 {
   margin-bottom: 40px;
 }
 
-.mail-area span {
-  color: #131212;
-  margin-top: 104px;
-  position: absolute;
-  background-color: #fff;
-  border-radius: 0 0 5px 5px;
-  box-sizing: border-box;
-  padding: 16px;
-  border: 1px solid #131212;
-}
-
 .tags li span {
   position: absolute;
   width: 1px;
@@ -443,6 +432,11 @@ input:focus:invalid {
   color: #191765;
 }
 
+.message-area {
+  display: flex;
+  flex-direction: column;
+}
+
 .message-area textarea {
   height: 148px;
   width: 84%;
@@ -459,6 +453,17 @@ input:focus:invalid {
   color: #81818c;
 }
 
+.error {
+  color: #fff;
+  margin-top: 180px;
+  position: absolute;
+  background-color: #191765;
+  border-radius: 0 0 5px 5px;
+  box-sizing: border-box;
+  padding: 16px;
+  margin-left: 17%;
+}
+
 .button-submit {
   display: flex;
   text-align: center;
@@ -471,7 +476,7 @@ input:focus:invalid {
   font-size: 12px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  margin-top: 40px;
+  margin-top: 80px;
   margin-bottom: 71px;
   margin-left: 45%;
   transition: background-color width 0.5s height 1s;
