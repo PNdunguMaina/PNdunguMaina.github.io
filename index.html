@@ -252,6 +252,8 @@
               name="user_email"
               placeholder="Email Address"
             />
+            <span class="error"></span>
+            
           </div>
 
           <div class="message-area">
@@ -264,7 +266,7 @@
           </div>
         </div>
 
-        <button class="button-submit" type="submit">Send</button>
+        <button class="button-submit" type="submit" onclick="validateEmail(document.form.user_email)">Send</button>
       </form>
     </section>
 
