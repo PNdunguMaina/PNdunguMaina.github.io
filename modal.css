@@ -1,0 +1,248 @@
+#overlay {
+  background-color: solid #81818c;
+}
+
+.modal {
+  display: none;
+}
+
+.modal.active {
+  display: block;
+  overflow-y: auto;
+  margin: 21px 6.5% auto 6.5%;
+  inset: 0;
+  border: 1px solid #fff;
+  gap: 24px;
+  position: fixed;
+  z-index: 777;
+  background: inherit;
+}
+
+#modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 6.5%;
+  margin-right: 6.5%;
+}
+
+#modal-header h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.buttons button {
+  padding: 12px;
+  gap: 12px;
+  width: 108px;
+  height: 48px;
+  border-style: none;
+  background: #7d73fc;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+  display: flex;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.buttons button:last-child {
+  margin-top: 24px;
+  margin-bottom: 28px;
+  padding: 12px;
+  gap: 12px;
+  width: 124px;
+  height: 48px;
+  background: #7d73fc;
+}
+
+#modal-header button {
+  outline: none;
+  background: inherit;
+  line-height: 10px;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal-img {
+  box-sizing: border-box;
+  margin-left: 6.5%;
+  margin-right: 6.5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.modal-img img:first-child {
+  width: 17.5rem;
+  height: 181px;
+}
+
+.modal-img img:nth-child(2) {
+  display: none;
+}
+
+.content p {
+  margin-left: 6.5%;
+  margin-right: 6.5%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.content .tags {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 20rem;
+  margin-left: 12.5%;
+  margin-top: 40px;
+}
+
+.content .tags li {
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+  border-right: 1px solid #fff;
+  padding-left: 8.5%;
+  padding-right: 8.5%;
+  width: 3rem;
+}
+
+.content .tags li:first-child {
+  border-left: 1px solid #fff;
+}
+
+.content .tags li:nth-child(2) {
+  width: 6rem;
+  border-right: 1px solid #fff;
+}
+
+.content .tags li:nth-child(3) {
+  border-left: 1px solid #fff;
+}
+
+.content .tags li:last-child {
+  display: none;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    margin: 112px 10% auto;
+    width: 80%;
+  }
+
+  #modal-header {
+    height: 72px;
+  }
+
+  .content h1 {
+    font-size: 40px;
+    line-height: 32px;
+  }
+
+  #modal-header button {
+    font-size: 1.75rem;
+  }
+
+  .modal-img img:first-child {
+    display: none;
+  }
+
+  .modal-img img:nth-child(2) {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    max-width: 100%;
+  }
+
+  .content {
+    box-sizing: border-box;
+    margin-left: 16.4%;
+    margin-right: 16.4%;
+    padding-bottom: 56px;
+  }
+
+  .content p {
+    line-height: 30px;
+    color: #fff;
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .content .tags {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 20rem;
+    margin-left: 10%;
+    position: absolute;
+  }
+
+  .content .tags li {
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+    border-right: 1px solid #fff;
+    text-align: center;
+    width: 3rem;
+    padding-left: 8.5%;
+    padding-right: 8.5%;
+  }
+
+  .content .tags li:first-child {
+    border-left: 1px solid #fff;
+  }
+
+  .content .tags li:nth-child(2) {
+    width: 8rem;
+  }
+
+  .content .tags li:nth-child(3) {
+    border-left: 1px solid #fff;
+  }
+
+  .content .tags li:last-child {
+    display: flex;
+  }
+
+  .buttons {
+    flex-direction: row;
+    gap: 78px;
+    margin-bottom: 90px;
+  }
+
+  .live-btn,
+  .source-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
