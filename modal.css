@@ -1,3 +1,6 @@
+#overlay {
+  background-color: solid #81818c;
+}
 .modal {
   display: none;
 }
@@ -11,7 +14,7 @@
   gap: 24px;
   position: fixed;
   z-index: 777;
-  background: rgb(0, 0, 128);
+  background: inherit;
 }
 
 #modal-header {
@@ -60,12 +63,12 @@
 }
 
 #modal-header button {
-  margin-top: 24px;
-  cursor: pointer;
-  border: none;
   outline: none;
-  font-size: 1.25rem;
+  background: inherit;
+  line-height: 10px;
+  font-weight: 400;
   color: #fff;
+  cursor: pointer;
 }
 
 .modal-img {
@@ -100,11 +103,11 @@
 }
 
 .content .tags {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 75%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 20rem;
   margin-left: 12.5%;
+  margin-top: 40px;
 }
 
 .content .tags li {
@@ -117,9 +120,19 @@
   border-right: 1px solid #fff;
   padding-left: 8.5%;
   padding-right: 8.5%;
+  width: 3rem;
 }
 
 .content .tags li:first-child {
+  border-left: 1px solid #fff;
+}
+
+.content .tags li:nth-child(2) {
+  width: 6rem;
+  border-right: 1px solid #fff;
+}
+
+.content .tags li:nth-child(3) {
   border-left: 1px solid #fff;
 }
 
@@ -178,6 +191,40 @@
     padding-left: 0;
     text-align: center;
     margin-bottom: 40px;
+  }
+
+  .content .tags {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 20rem;
+    margin-left: 10%;
+    position: absolute;
+  }
+
+  .content .tags li {
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+    border-right: 1px solid #fff;
+    text-align: center;
+    width: 3rem;
+    padding-left: 8.5%;
+    padding-right: 8.5%;
+  }
+
+  .content .tags li:first-child {
+    border-left: 1px solid #fff;
+  }
+
+  .content .tags li:nth-child(2) {
+    width: 8rem;
+  }
+
+  .content .tags li:nth-child(3) {
+    border-left: 1px solid #fff;
   }
 
   .content .tags li:last-child {
