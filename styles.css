@@ -60,7 +60,7 @@ button {
   width: 100%;
   min-height: 100vh;
   position: absolute;
-  background:
+  background: 
     url(Images/menu1.svg) no-repeat left bottom,
     url(Images/menu2.svg) no-repeat bottom right rgba(25, 23, 101, 1);
   z-index: 10;
